@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/mainFragment">
+
+    <fragment android:id="@+id/mainFragment" android:name="com.example.solarcalc13.MainFragment"
+              android:label="fragment_main" tools:layout="@layout/fragment_main">
+        <action android:id="@+id/action_mainFragment_to_calculateAccurateFragment"
+                app:destination="@id/calculateAccurateFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+        />
+
+    </fragment>
+    <fragment android:id="@+id/calculateAccurateFragment"
+              android:name="com.example.solarcalc13.CalculateFragment"
+              android:label="fragment_calculate_accurate" tools:layout="@layout/fragment_calculate">
+
+        <action android:id="@+id/action_calculateAccurateFragment_to_viewOffersFragment"
+                app:destination="@id/viewOffersFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+        />
+    </fragment>
+
+    <fragment android:id="@+id/viewOffersFragment"
+              android:name="com.example.solarcalc13.ViewOffersFragment"
+              android:label="fragment_view_offers"
+              tools:layout="@layout/fragment_view_offers">
+
+        <argument android:name="amount"
+                  android:defaultValue="none"/>
+
+        <argument android:name="price"
+                  android:defaultValue="none"/>
+
+        <argument android:name="roof"
+                  android:defaultValue="false"/>
+
+        <argument android:name="cserep"
+                  android:defaultValue="false"/>
+        <argument android:name="pala"
+                  android:defaultValue="false"/>
+        <argument android:name="zsin"
+                  android:defaultValue="false"/>
+        <argument android:name="beton"
+                  android:defaultValue="false"/>
+        <argument android:name="fem"
+                  android:defaultValue="false"/>
+        <argument android:name="emailText"
+                  android:defaultValue="none"/>
+
+        <argument android:name="angle"
+                  android:defaultValue="none"/>
+
+
+    </fragment>
+
+</navigation>

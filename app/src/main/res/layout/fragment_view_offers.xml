@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:card_view="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/cardview_light_background">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    card_view:cardElevation="24dp"
+                    card_view:cardCornerRadius="8dp"
+                    android:layout_margin="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <ImageView android:layout_width="match_parent"
+                               android:layout_height="210dp"
+                               android:id="@+id/imageView1"
+                               android:background="@drawable/sky_system_logo"/>
+
+                    <TextView android:layout_width="match_parent"
+                              android:id="@+id/textView1_1"
+                              android:layout_height="40dp"
+                              android:text="Sky System Kft."
+                              android:gravity="center_vertical"
+                              android:textStyle="bold"
+                              android:textSize="16dp"
+                              card_view:layout_constraintStart_toStartOf="parent" android:layout_marginStart="10dp"
+                              android:layout_marginTop="10dp" card_view:layout_constraintTop_toBottomOf="@+id/imageView1"
+                              card_view:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="10dp"/>
+
+                    <TextView android:layout_width="match_parent"
+                              android:id="@+id/textView1_2"
+                              android:layout_height="40dp"
+                              android:text="10 év garancia •• MFB hitel 0%-os kamattal napelem rendszerekre"
+                              android:textStyle="bold"
+                              android:textSize="12sp"
+                              card_view:layout_constraintStart_toStartOf="parent" android:layout_marginStart="10dp"
+                              card_view:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="10dp"
+                              card_view:layout_constraintHorizontal_bias="0.0"
+                              card_view:layout_constraintTop_toBottomOf="@+id/textView1_1"
+                              card_view:layout_constraintBottom_toTopOf="@+id/button1"/>
+
+                    <TextView android:layout_width="150dp"
+                              android:layout_height="40dp"
+                              android:id="@+id/price_here_shown_1"
+                              android:text="price_here_shown"
+                              android:textColor="@color/colorPrimary"
+                              android:gravity="center_vertical"
+                              android:textStyle="bold"
+                              android:textSize="24sp"
+                              card_view:layout_constraintStart_toStartOf="parent"
+                              android:layout_marginStart="10dp"
+                              card_view:layout_constraintTop_toBottomOf="@+id/textView1_2"/>
+
+                    <Button
+                            android:id="@+id/button1"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/request_offer_btn"
+                            android:button="@android:color/transparent"
+                            android:contextClickable="false"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:text="Ajánlatkérés"
+                            android:textColor="#4AC948"
+                            android:textAppearance="@style/TextAppearance.AppCompat"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            card_view:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginEnd="10dp" android:layout_marginBottom="10dp"
+                            card_view:layout_constraintBottom_toBottomOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    card_view:cardElevation="24dp"
+                    card_view:cardCornerRadius="8dp"
+                    android:layout_margin="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <ImageView android:layout_width="match_parent"
+                               android:layout_height="210dp"
+                               android:id="@+id/imageView2"
+                               android:background="@drawable/sky_system_logo"
+                               tools:layout_editor_absoluteY="-27dp"
+                               tools:layout_editor_absoluteX="0dp"/>
+
+
+                    <TextView android:layout_width="match_parent"
+                              android:id="@+id/textView2_1"
+                              android:layout_height="40dp"
+                              android:text="Sky System Kft."
+                              android:gravity="center_vertical"
+                              android:textStyle="bold"
+                              android:textSize="16dp"
+                              card_view:layout_constraintStart_toStartOf="parent" android:layout_marginStart="10dp"
+                              card_view:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="10dp"
+                              android:layout_marginTop="10dp"
+                              card_view:layout_constraintTop_toBottomOf="@+id/imageView2"/>
+
+                    <TextView android:layout_width="match_parent"
+                              android:id="@+id/textView2_2"
+                              android:layout_height="40dp"
+                              android:text="10 év garancia •• MFB hitel 0%-os kamattal napelem rendszerekre"
+                              android:textStyle="bold"
+                              android:textSize="12sp"
+                              card_view:layout_constraintStart_toStartOf="parent" android:layout_marginStart="10dp"
+                              card_view:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="10dp"
+                              card_view:layout_constraintHorizontal_bias="0.0"
+                              card_view:layout_constraintTop_toBottomOf="@+id/textView2_1"/>
+
+                    <TextView android:layout_width="150dp"
+                              android:layout_height="40dp"
+                              android:id="@+id/price_here_shown_2"
+                              android:text="price_here_shown"
+                              android:textColor="@color/colorPrimary"
+                              android:gravity="center_vertical"
+                              android:textStyle="bold"
+                              android:textSize="24sp"
+                              card_view:layout_constraintStart_toStartOf="parent" android:layout_marginStart="10dp"
+                              card_view:layout_constraintTop_toBottomOf="@+id/textView2_2"/>
+
+                    <Button
+                            android:id="@+id/button2"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/request_offer_btn"
+                            android:button="@android:color/transparent"
+                            android:contextClickable="false"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:text="Ajánlatkérés"
+                            android:textColor="#4AC948"
+                            android:textAppearance="@style/TextAppearance.AppCompat"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            card_view:layout_constraintTop_toBottomOf="@+id/textView2_2"
+                            card_view:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="10dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    card_view:cardElevation="24dp"
+                    card_view:cardCornerRadius="8dp"
+                    android:layout_margin="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <ImageView android:layout_width="match_parent"
+                               android:layout_height="210dp"
+                               android:id="@+id/imageView3"
+                               android:background="@drawable/sky_system_logo"/>
+
+
+                    <TextView android:layout_width="match_parent"
+                              android:id="@+id/textView3_1"
+                              android:layout_height="40dp"
+                              android:text="Sky System Kft."
+                              android:gravity="center_vertical"
+                              android:textStyle="bold"
+                              android:textSize="16dp"
+                              card_view:layout_constraintStart_toStartOf="parent" android:layout_marginStart="10dp"
+                              card_view:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="10dp"
+                              card_view:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="10dp"
+                              card_view:layout_constraintTop_toBottomOf="@+id/imageView3"/>
+
+                    <TextView android:layout_width="match_parent"
+                              android:id="@+id/textView3_2"
+                              android:layout_height="40dp"
+                              android:text="10 év garancia •• MFB hitel 0%-os kamattal napelem rendszerekre"
+                              android:textStyle="bold"
+                              android:textSize="12sp"
+                              card_view:layout_constraintStart_toStartOf="parent" android:layout_marginStart="10dp"
+                              card_view:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="10dp"
+                              card_view:layout_constraintHorizontal_bias="0.0"
+                              card_view:layout_constraintTop_toBottomOf="@+id/textView3_1"/>
+
+                    <TextView android:layout_width="150dp"
+                              android:layout_height="40dp"
+                              android:id="@+id/price_here_shown_3"
+                              android:text="price_here_shown"
+                              android:textColor="@color/colorPrimary"
+                              android:gravity="center_vertical"
+                              android:textStyle="bold"
+                              android:textSize="24sp"
+                              card_view:layout_constraintStart_toStartOf="parent"
+                              android:layout_marginStart="10dp"
+                              card_view:layout_constraintTop_toBottomOf="@+id/textView3_2"/>
+
+                    <Button
+                            android:id="@+id/button3"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/request_offer_btn"
+                            android:button="@android:color/transparent"
+                            android:contextClickable="false"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:text="Ajánlatkérés"
+                            android:textColor="#4AC948"
+                            android:textAppearance="@style/TextAppearance.AppCompat"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            card_view:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginEnd="10dp" android:layout_marginBottom="10dp"
+                            card_view:layout_constraintBottom_toBottomOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
