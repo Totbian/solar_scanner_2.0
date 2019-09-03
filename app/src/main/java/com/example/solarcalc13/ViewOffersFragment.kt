@@ -20,28 +20,26 @@ class ViewOffersFragment : Fragment(), View.OnClickListener{
     private var pottery:String? = null
     private var direction:String? = null
     private var angle:String? = null
-
     private var roof:Boolean? = null
-
     private var pala:Boolean? = null
     private var cserep:Boolean? = null
     private var fem:Boolean? = null
     private var zsin:Boolean? = null
     private var beton:Boolean? = null
 
+    private var button:Button? = null
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         amount = arguments!!.getString("amount")
-
         roof = arguments!!.getBoolean("roof")
-
         pala = arguments!!.getBoolean("pala")
         cserep = arguments!!.getBoolean("cserep")
         fem = arguments!!.getBoolean("fem")
         zsin = arguments!!.getBoolean("zsin")
         beton = arguments!!.getBoolean("beton")
-
         angle = arguments!!.getString("angle")
     }
 
@@ -67,6 +65,7 @@ class ViewOffersFragment : Fragment(), View.OnClickListener{
         button1.setOnClickListener {
             startActivity(sendIntent)
         }
+
     }
 
     override fun onCreateView(
@@ -81,6 +80,11 @@ class ViewOffersFragment : Fragment(), View.OnClickListener{
         super.onViewCreated(view, savedInstanceState)
 
         view.findViewById<Button>(R.id.button1).setOnClickListener(this)
+
+        /**
+         * proba
+         */
+
 
         val message = "$amount"
         val price = message.toDouble()
@@ -113,11 +117,6 @@ class ViewOffersFragment : Fragment(), View.OnClickListener{
         }
     }
 
-    /*
-    private fun sendEmail(){
-        startActivity(sendIntent)
-    }
-    */
 
     /**
      * Adding 1234321 as double, this method will give back "1.234.321 HUF" in string
